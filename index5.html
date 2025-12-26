@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html leng="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Page</title> 
+
+    <link rel="stylesheet" href="style5.css">
+    <script src="https://kit.fontawesome.com/48f33e96bf.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="C:\Nilesh img\image00.jpg" class="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                <!--<i class="fa-solid fa-circle-xmark"></i>-->
+                </ul>
+               <!---<i class="fa-solid fa-bars"></i>--> 
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, i'm <span>Nilesh</span><br> Shinde </h1>
+            </div>
+        </div>
+    </div>
+   <!-- -------------about---------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Nilesh img\image000.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a final-year BCA student with a strong interest in data analysis, data visualization, and business intelligence. Skilled in Excel, SQL, and basic Python for data manipulation, with a keen eye for patterns and insights. Passionate about turning raw data into meaningful information to support decision-making. Eager to apply my analytical skills, learn advanced tools like Power BI and Tableau, and grow as a data analyst.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    </div> 
+                    <div class="tab-contenents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br></li>
+                            <li><span>CSS</span><br></li>
+                            <li><span>JavaScript</span><br></li>
+                        </ul>
+                    </div>
+                     <div class="tab-contenents" id="experience">
+                        <ul>
+                            <li><span>I'm a Student</span><br>I have no Experience</li>
+                            
+                        </ul>
+                    </div>
+                     <div class="tab-contenents" id="education">
+                        <ul>
+                            <li><span>2023 - 2026</span><br>BCA (Bachelor of Computer Applications) from G.H. Raisoni College Engineering and Management Jalgaon  </li>
+                            <li><span>2022 - 2023</span><br>HSC from Jayhind Madhyamik Uchh Madhyamik Vidyalaya Chalisgaon </li>
+                            <li><span>2020 - 2021</span><br>SSC from Madhyamik Vidyalaya Kargaon</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------portfolio---------------->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="C:\Nilesh img\calculaterimage.jpg">
+                    <div class="layer">
+                        <h3>Calculator</h3>
+                        <p>Simple Calculator using HTML, CSS</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               <div class="work">
+                    <img src="C:\Nilesh img\landing page.jpg">
+                    <div class="layer">
+                        <h3>Landing Page</h3>
+                        <p>Simple Landing Page.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+               <div class="work">
+                    <img src="C:\Nilesh img\bus.jpg">
+                    <div class="layer">
+                        <h3>TIK TAK Game</h3>
+                        <p>Game.</p>
+                        <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+
+        </div>
+
+    </div>
+
+      <!--------------contact---------------->
+      <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me </h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> nileshshinde7422@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i>+91 7499621763</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                    </div>
+                    <a href="C:\Users\hp\Downloads\Nilesh Resume (1) (1).pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name ="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright @ Nilesh <i class="fa-solid fa-heart"></i>Shinde<p>
+        </div>
+      </div>
+
+
+
+
+
+    <script>
+        var tablinks= document.getElementsByClassName("tab-links");
+        var tabcontenents= document.getElementsByClassName("tab-contenents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+             for(tabcontenent of tabcontenents){
+                tabcontenent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    
+</body>
+</html>
